@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3 h4, h5, h6{
+    font-family: "Poppins", sans-serif;
+    
+}
+
+:root{
+    --black:#000;
+    --red: #ff0000;
+    --white:#fff;
+    --off:#f1f1f1;
+}
+
+/* heading design start */
+
+.heading{
+    padding: 40px 0px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.heading h1 span{
+    font-weight: 800;
+    text-decoration: 6px solid var(--red) underline;
+}
+
+/* heading design end */
+
+
+
+/* button design start */
+
+.btn{
+    padding: 30px 0px;
+}
+
+.btn button{
+    padding: 10px 30px;
+    font-size: 18px;
+    background: transparent;
+    color: var(--red);
+    border: none;
+    outline: none;
+    border: 2px solid var(--red) ;
+    border-radius: 35px;
+    font-weight: 700;
+}
+
+.btn button:hover{
+    background: var(--red);
+    color: var(--white);
+    border: var(--red);
+}
+
+/* button design end */
+
+.menu_part{
+    background: var(--black);
+    position: fixed;
+    width: 100%;
+}
+
+.gap{
+    width: 80%;
+    margin: auto;
+}
+
+.logo a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.logo a span{
+    color: var(--red);
+}
+
+.menus{
+    display: flex;
+    /* padding: 15px; */
+}
+
+.menus li{
+    list-style: none;
+    padding: 15px;
+}
+
+.menus li a{    
+    display: block;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.menus li a:hover{
+    color: var(--red);
+}
+
+.menu_bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* nav part */
+
+/* hero part */
+
+.hero_part{
+    padding: 200px 0px 300px; 
+    background-image: url(/img/back.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background: rgba(0 0 0 0.5);
+}
+
+.hero_con{
+    width: 50%;
+    color: var(--white);
+
+}
+
+.hero_con h1{
+    font-size: 60px;
+    line-height: 75px;
+    padding: 5px 0px;
+    text-transform: uppercase;
+}
+
+.hero_con h1 span{
+    font-size: 60px;
+    cursor: pointer;
+    color: var(--red);
+}
+
+.hero_con h3{
+    font-size: 25px;
+    padding: 8px 0px;
+}
+
+.hero_con p{
+    font-size: 18px;
+    text-align: justify;
+}
+
+/* about design */
+
+.about_part{
+    padding: 100px 0px 150px;
+    background: var(--off);
+}
+
+.about_main{
+    display: flex;
+    column-gap: 80px;
+}
+
+.about_con{
+    width: 50%;
+}
+
+.about_con p{
+    padding: 20px 0px;
+    text-align: justify;
+}
+
+.about_con h2{
+    text-decoration: 2px solid var(--red) underline;
+    text-align: center;
+}
+
+
+
+.about_img{
+    width: 35%;
+}
+
+.about_img img{
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 2px 2px 10px var(--black);
+}
+
+/* about part end */
+
+
+/* skills part start */
+
+.skill_part{
+    padding: 100px 0px 150px;
+}
+
+.skill_bar{
+    margin: 100px 0px;
+    display: flex;
+    column-gap: 30px;
+    
+}
+
+.skill1 h2, .skill2 h2, .skill3 h2{
+    text-align: center;
+    padding: 20px 0px 20px;
+}
+.skill1 h3, .skill2 h3, .skill3 h3{
+    text-align: center;
+}
+
+.skill1 h2 i, .skill2 h2 i, .skill3 h2 i{
+    font-size: 40px;
+    background: var(--red);
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.skill1 p, .skill2 p, .skill3 p{
+    margin: 15px 0px;
+}
+
+.skill1, .skill2, .skill3 {
+    text-align: justify;
+    background: var(--off);
+    padding: 20px;
+    border-radius: 25px;
+    transition: all 0.5s;
+}
+
+ 
+.skill1:hover{
+    background: var(--black);
+    color: var(--white);
+    cursor: pointer;
+    box-shadow: 1px 1px 10px var(--red);    
+    transform: translateY(-10px);
+}
+.skill2:hover{
+    background: var(--black);
+    color: var(--white);
+    cursor: pointer;
+    box-shadow: 1px 1px 10px var(--red);
+    transform: translateY(-10px);
+}
+.skill3:hover{
+    background: var(--black);
+    color: var(--white);
+    cursor: pointer;
+    box-shadow: 1px 1px 10px var(--red);
+    transform: translateY(-10px);
+}
+
+/* Skills part end */
+
+/* contract part start */
+
+.contact_part{
+    padding: 0px 0px 150px;
+    background: var(--off);
+}
+
+.contact_bar{
+    display: flex;
+    gap: 50px;
+
+}
+
+.contact_social_media{
+    padding: 15px 0px;
+    margin: 35px 0px;
+}
+
+.social_media{
+    font-size: 30px;
+    margin: 20px 0px;
+    
+}
+
+.contact_social_media h3{
+    padding: 10px 0px;
+}
+
+.contact_social_media h3:hover{
+    cursor: pointer;
+    color: var(--red);
+}
+
+.social_media a i{
+    text-decoration: none;
+    color: var(--black);
+    transition: transform 0.5s;
+}
+
+.social_media a i:hover{
+    color: var(--red);
+    transform: translateY(-5px);
+}
+
+.contact_form{
+    padding: 20px;
+    width: 50%;
+    border: 2px solid var(--red);
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px var(--black);
+    /* max-width: 700px; */
+    margin: auto;
+    transition: transform 0.5s;
+}
+
+.contact_form:hover{
+    transform: translateY(-10px);
+}
+
+.contact_bar input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border: 1px solid var(--red);
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+
+.contact_bar input::placeholder{
+    color: var(--black);
+}
+
+textarea{
+    width: 100%;
+    padding: 10px 5px 80px;
+    margin: 10px 0px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border: 1px solid var(--red);
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.submit button{
+    width: 100%;
+    margin: 20px 0px;
+    padding: 10px;
+    background: transparent;
+    outline: none;
+    border: 1px solid var(--red);
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.submit button:hover{
+    background: var(--red);
+    color: var(--black);
+    transition: 0.5s;
+}
+
+/* contact part end */
+
+/* footer part start */
+
+.footer_part{
+    height: 180px ;
+    padding: 50px 0px 0px;
+    color: var(--off);
+    background: var(--black);
+    cursor: pointer;
+}
+
+.copy{
+    margin: 50px 0px 0px;
+    text-align: center;
+}
+
+.copy span{
+    font-size: 20px;
+}
+.copy span:hover{
+    cursor: pointer;
+    color: var(--red);
+    transition: 0.5s;
+}
+
+
+/* footer part end */
+
+
+
+
+
+
+
